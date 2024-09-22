@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #020202;
+}
+
+header {
+    text-align: center;
+    background-color: #FF6B00;
+    padding: 50px 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.header-img {
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #FF6B00;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.about, .services, .contact {
+    padding: 40px;
+    background-color: white;
+    color: #020202;
+}
+
+h2 {
+    color: #FF6B00;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 1.2em;
+}
