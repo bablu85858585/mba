@@ -1,54 +1,49 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4; /* Add your preferred background color */
+    background-color: #ffffff; /* Change this to your desired background */
+    color: #020202;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #ff6b00; /* Your preferred header color */
-    color: white;
 }
 
-nav {
-    background-color: #020202; /* Match with your HTML background */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+.navbar {
+    background-color: #ff6b00; /* Set your desired background color */
     padding: 10px 0;
 }
 
-nav ul li {
-    margin: 0 15px;
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav a {
-    color: white;
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #ffffff; /* Text color for navigation */
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
     transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #ff6b00; /* Color change on hover */
+.navbar a:hover {
+    color: #e65c00; /* Color change on hover */
+    transform: scale(1.1); /* Scale effect on hover */
 }
 
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
+/* Service cards */
 .service-card {
-    background-color: white;
     border: 1px solid #ddd;
-    border-radius: 5px;
     padding: 20px;
-    text-align: center;
+    border-radius: 5px;
     transition: transform 0.3s;
 }
 
