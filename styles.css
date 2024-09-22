@@ -1,88 +1,46 @@
-/* General styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* Background color */
-}
-
-header {
-    background-color: #FF6B00; /* Header background color */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
 nav {
-    background-color: #020202; /* Navigation background color */
-    color: white;
+    background-color: #FF6B00; /* Match the background color */
+    padding: 10px 0; /* Adjust padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center items */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 15px;
+    margin: 0 20px; /* Adjust spacing between items */
+    position: relative; /* Required for hover effect */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px; /* Set desired text size */
+    transition: color 0.3s, transform 0.3s; /* Transition for color and transform */
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline effect on hover */
+    color: #e65c00; /* Change color on hover */
+    transform: scale(1.1); /* Scale effect on hover */
 }
 
-.services {
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
+/* Optional: Add animation for a color change effect */
+nav ul li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: transparent; /* Start with transparent */
+    position: absolute;
+    bottom: -5px; /* Position it below the text */
+    left: 0;
+    transition: background 0.3s; /* Transition for background color */
 }
 
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px;
-}
-
-.service-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.service-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.service-card i {
-    font-size: 30px; /* Icon size */
-    margin-bottom: 10px;
-    color: #FF6B00; /* Matching the brand color */
-}
-
-.service-card h3 {
-    margin: 10px 0;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #FF6B00;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #e65c00; /* Darker shade on hover */
+nav ul li a:hover::after {
+    background: #FF6B00; /* Change to the desired color on hover */
 }
